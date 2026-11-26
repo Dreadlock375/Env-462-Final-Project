@@ -48,7 +48,7 @@ observation-dependent tests skip if the original WAPDA data are absent; supply
 the observations to run them. Neither a successful test suite with skips nor a
 source-only checkout establishes a complete cold rebuild.
 
-he model remains a historical research workflow with provisional basin
+The model remains a historical research workflow with provisional basin
 and glacier routing, fixed glacier geometry, and imperfect flood timing and
 frequency.
 
