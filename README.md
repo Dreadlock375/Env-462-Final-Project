@@ -4,7 +4,7 @@ Self-contained historical workflow for the provisional Besham Qila Upper Indus b
 
 ## Start from scratch
 
-Requirements: Linux x86_64, system Python 3, Bash, Git, Git LFS, ordinary system libraries, sufficient disk space and access to upstream data services. On Arch install Git LFS if missing (`sudo pacman -S git-lfs`). Place the original user-supplied WAPDA directory at `data/observations/wapda/original/WAPDA/`. At minimum it must contain `Cleaned_Data/SWHP_discharge/Indus_at_Besham_Qila_daily_discharge.csv` and `Cleaned_Data/metadata/stations.csv`. Supply your own licensed CDS credentials in `.runtime-home/.cdsapirc` (mode 600). Do not commit or upload this file. The additional observational archives can be kept under `data/observations/` but are not needed by this historical model.
+Requirements: Linux x86_64, system Python 3, Bash, Git, Git LFS, ordinary system libraries, sufficient disk space and access to upstream data services. On Arch install Git LFS if missing (`sudo pacman -S git-lfs`). Place the original user-supplied WAPDA directory at `data/observations/wapda/original/WAPDA/`. Supply your own licensed CDS credentials in `.runtime-home/.cdsapirc` (mode 600). The additional observational archives can be kept under `data/observations/` but are not needed by this historical model.
 
 From the project root at its permanent absolute path:
 
