@@ -1,0 +1,1081 @@
+{
+  "status": "DAILY_FORCING_PREPARED_NOT_RUNTIME_TESTED",
+  "plan": "37150ef01d0963ba",
+  "days": 5478,
+  "cds_files": 97,
+  "arco_tiles": 936,
+  "native_grid": [
+    33,
+    47
+  ],
+  "cwatm_grid": [
+    14,
+    21
+  ],
+  "basin_cells": 67,
+  "basin_area_km2": 171171.03125,
+  "daily_ranges_cwatm": {
+    "pr": [
+      0.0,
+      0.0026874804253085426
+    ],
+    "tas": [
+      232.40673535484507,
+      314.20345535373826
+    ],
+    "tasmin": [
+      224.64003124324142,
+      308.60139296031673
+    ],
+    "tasmax": [
+      237.66600094083395,
+      321.87716993306856
+    ],
+    "ps": [
+      49403.96821772755,
+      100875.02495833073
+    ],
+    "huss": [
+      7.715902783522036e-05,
+      0.02510533709335642
+    ],
+    "sfcwind": [
+      0.17491861370550507,
+      10.397281249992982
+    ],
+    "rsds": [
+      13.31691431321724,
+      418.5130296813363
+    ],
+    "rlds": [
+      81.11636134342385,
+      490.1330226899482
+    ]
+  },
+  "monthly_basin": {
+    "2005-01": {
+      "days": 31,
+      "precipitation_mm": 49.18473584027492,
+      "temperature_mean_C": -20.69419298382979
+    },
+    "2005-02": {
+      "days": 28,
+      "precipitation_mm": 115.22575419915921,
+      "temperature_mean_C": -17.008826107013316
+    },
+    "2005-03": {
+      "days": 31,
+      "precipitation_mm": 75.11307079762881,
+      "temperature_mean_C": -11.820705090731296
+    },
+    "2005-04": {
+      "days": 30,
+      "precipitation_mm": 86.17548710170493,
+      "temperature_mean_C": -9.85488521969037
+    },
+    "2005-05": {
+      "days": 31,
+      "precipitation_mm": 61.694161403759324,
+      "temperature_mean_C": -5.175876809281392
+    },
+    "2005-06": {
+      "days": 30,
+      "precipitation_mm": 22.50101795000137,
+      "temperature_mean_C": 0.3660142938374697
+    },
+    "2005-07": {
+      "days": 31,
+      "precipitation_mm": 86.16313123932895,
+      "temperature_mean_C": 6.808918073527193
+    },
+    "2005-08": {
+      "days": 31,
+      "precipitation_mm": 51.05030136597475,
+      "temperature_mean_C": 7.244694854239093
+    },
+    "2005-09": {
+      "days": 30,
+      "precipitation_mm": 44.16901151616611,
+      "temperature_mean_C": 3.5786546820099137
+    },
+    "2005-10": {
+      "days": 31,
+      "precipitation_mm": 29.128289602876187,
+      "temperature_mean_C": -6.173910200405458
+    },
+    "2005-11": {
+      "days": 30,
+      "precipitation_mm": 25.628919314063584,
+      "temperature_mean_C": -14.100719941397392
+    },
+    "2005-12": {
+      "days": 31,
+      "precipitation_mm": 17.434673444719238,
+      "temperature_mean_C": -18.51005782212011
+    },
+    "2006-01": {
+      "days": 31,
+      "precipitation_mm": 112.53597636051612,
+      "temperature_mean_C": -18.925796303605715
+    },
+    "2006-02": {
+      "days": 28,
+      "precipitation_mm": 94.03194535381759,
+      "temperature_mean_C": -13.611714123558404
+    },
+    "2006-03": {
+      "days": 31,
+      "precipitation_mm": 46.45876558864626,
+      "temperature_mean_C": -14.053876595294268
+    },
+    "2006-04": {
+      "days": 30,
+      "precipitation_mm": 65.63600463993504,
+      "temperature_mean_C": -9.733661293559255
+    },
+    "2006-05": {
+      "days": 31,
+      "precipitation_mm": 21.42015082021536,
+      "temperature_mean_C": -1.3638769344115715
+    },
+    "2006-06": {
+      "days": 30,
+      "precipitation_mm": 65.29408565564489,
+      "temperature_mean_C": 2.0720177908212585
+    },
+    "2006-07": {
+      "days": 31,
+      "precipitation_mm": 89.86235015757129,
+      "temperature_mean_C": 8.231586698050076
+    },
+    "2006-08": {
+      "days": 31,
+      "precipitation_mm": 139.12872081106812,
+      "temperature_mean_C": 7.370801962250595
+    },
+    "2006-09": {
+      "days": 30,
+      "precipitation_mm": 52.8769442348642,
+      "temperature_mean_C": 2.160370937576255
+    },
+    "2006-10": {
+      "days": 31,
+      "precipitation_mm": 23.827529544031634,
+      "temperature_mean_C": -4.677683650817927
+    },
+    "2006-11": {
+      "days": 30,
+      "precipitation_mm": 49.59329933373181,
+      "temperature_mean_C": -12.776713453181154
+    },
+    "2006-12": {
+      "days": 31,
+      "precipitation_mm": 71.17158822992909,
+      "temperature_mean_C": -18.36407729679046
+    },
+    "2007-01": {
+      "days": 31,
+      "precipitation_mm": 15.510329472692275,
+      "temperature_mean_C": -20.5304857280015
+    },
+    "2007-02": {
+      "days": 28,
+      "precipitation_mm": 62.57845435371187,
+      "temperature_mean_C": -15.489929121890865
+    },
+    "2007-03": {
+      "days": 31,
+      "precipitation_mm": 102.56873386544643,
+      "temperature_mean_C": -14.310266937682652
+    },
+    "2007-04": {
+      "days": 30,
+      "precipitation_mm": 22.68921935424266,
+      "temperature_mean_C": -6.396518923150907
+    },
+    "2007-05": {
+      "days": 31,
+      "precipitation_mm": 52.691684765372116,
+      "temperature_mean_C": -1.599683071146842
+    },
+    "2007-06": {
+      "days": 30,
+      "precipitation_mm": 70.0872469168564,
+      "temperature_mean_C": 4.538053773810591
+    },
+    "2007-07": {
+      "days": 31,
+      "precipitation_mm": 75.93554865623436,
+      "temperature_mean_C": 7.843355125180886
+    },
+    "2007-08": {
+      "days": 31,
+      "precipitation_mm": 69.83365687932618,
+      "temperature_mean_C": 8.088104734691647
+    },
+    "2007-09": {
+      "days": 30,
+      "precipitation_mm": 56.33565512291417,
+      "temperature_mean_C": 2.650440742162112
+    },
+    "2007-10": {
+      "days": 31,
+      "precipitation_mm": 18.037699854231676,
+      "temperature_mean_C": -7.0451586202038605
+    },
+    "2007-11": {
+      "days": 30,
+      "precipitation_mm": 6.721253523037193,
+      "temperature_mean_C": -11.01634186406738
+    },
+    "2007-12": {
+      "days": 31,
+      "precipitation_mm": 43.660997994271966,
+      "temperature_mean_C": -17.541237842690663
+    },
+    "2008-01": {
+      "days": 31,
+      "precipitation_mm": 103.7955208831178,
+      "temperature_mean_C": -20.806330928136248
+    },
+    "2008-02": {
+      "days": 29,
+      "precipitation_mm": 52.281533007007404,
+      "temperature_mean_C": -19.371239566604523
+    },
+    "2008-03": {
+      "days": 31,
+      "precipitation_mm": 25.43844273682297,
+      "temperature_mean_C": -12.620120707078945
+    },
+    "2008-04": {
+      "days": 30,
+      "precipitation_mm": 64.22656386756675,
+      "temperature_mean_C": -8.380754102361369
+    },
+    "2008-05": {
+      "days": 31,
+      "precipitation_mm": 32.635552743730294,
+      "temperature_mean_C": -2.897714427004357
+    },
+    "2008-06": {
+      "days": 30,
+      "precipitation_mm": 51.61331033769946,
+      "temperature_mean_C": 5.849188497894757
+    },
+    "2008-07": {
+      "days": 31,
+      "precipitation_mm": 74.87902575618457,
+      "temperature_mean_C": 8.728173097713508
+    },
+    "2008-08": {
+      "days": 31,
+      "precipitation_mm": 94.36342360579779,
+      "temperature_mean_C": 7.148600072777451
+    },
+    "2008-09": {
+      "days": 30,
+      "precipitation_mm": 60.47943599975956,
+      "temperature_mean_C": -0.6755098228599555
+    },
+    "2008-10": {
+      "days": 31,
+      "precipitation_mm": 30.240521881870585,
+      "temperature_mean_C": -7.080766753296127
+    },
+    "2008-11": {
+      "days": 30,
+      "precipitation_mm": 20.983331731912287,
+      "temperature_mean_C": -12.485280921013583
+    },
+    "2008-12": {
+      "days": 31,
+      "precipitation_mm": 78.9154950833844,
+      "temperature_mean_C": -16.691886454595764
+    },
+    "2009-01": {
+      "days": 31,
+      "precipitation_mm": 87.508323687157,
+      "temperature_mean_C": -17.523206376717003
+    },
+    "2009-02": {
+      "days": 28,
+      "precipitation_mm": 98.58145755765642,
+      "temperature_mean_C": -16.408118619944926
+    },
+    "2009-03": {
+      "days": 31,
+      "precipitation_mm": 65.47793315414445,
+      "temperature_mean_C": -12.858965037286985
+    },
+    "2009-04": {
+      "days": 30,
+      "precipitation_mm": 84.33074942091443,
+      "temperature_mean_C": -8.405888629707126
+    },
+    "2009-05": {
+      "days": 31,
+      "precipitation_mm": 36.68934947159979,
+      "temperature_mean_C": -5.106337924510746
+    },
+    "2009-06": {
+      "days": 30,
+      "precipitation_mm": 47.811519911459364,
+      "temperature_mean_C": -0.11545699589355288
+    },
+    "2009-07": {
+      "days": 31,
+      "precipitation_mm": 58.05324528182288,
+      "temperature_mean_C": 5.62903495474829
+    },
+    "2009-08": {
+      "days": 31,
+      "precipitation_mm": 49.46570155498119,
+      "temperature_mean_C": 7.626148042799048
+    },
+    "2009-09": {
+      "days": 30,
+      "precipitation_mm": 42.55427467794902,
+      "temperature_mean_C": 1.0574892906483013
+    },
+    "2009-10": {
+      "days": 31,
+      "precipitation_mm": 28.355489604100367,
+      "temperature_mean_C": -6.500686865609105
+    },
+    "2009-11": {
+      "days": 30,
+      "precipitation_mm": 44.18069935320484,
+      "temperature_mean_C": -15.145067736196559
+    },
+    "2009-12": {
+      "days": 31,
+      "precipitation_mm": 41.66147826735982,
+      "temperature_mean_C": -18.909867725706285
+    },
+    "2010-01": {
+      "days": 31,
+      "precipitation_mm": 36.891341440385204,
+      "temperature_mean_C": -18.846937877318513
+    },
+    "2010-02": {
+      "days": 28,
+      "precipitation_mm": 127.27421214708353,
+      "temperature_mean_C": -16.465721479694164
+    },
+    "2010-03": {
+      "days": 31,
+      "precipitation_mm": 57.387577849981916,
+      "temperature_mean_C": -10.853593848453112
+    },
+    "2010-04": {
+      "days": 30,
+      "precipitation_mm": 83.65058560060693,
+      "temperature_mean_C": -7.03204041230097
+    },
+    "2010-05": {
+      "days": 31,
+      "precipitation_mm": 98.85947882008426,
+      "temperature_mean_C": -3.3324096301683155
+    },
+    "2010-06": {
+      "days": 30,
+      "precipitation_mm": 46.08927117795703,
+      "temperature_mean_C": -0.7367612792981072
+    },
+    "2010-07": {
+      "days": 31,
+      "precipitation_mm": 105.63634442566473,
+      "temperature_mean_C": 4.9814368680141445
+    },
+    "2010-08": {
+      "days": 31,
+      "precipitation_mm": 115.00165257191213,
+      "temperature_mean_C": 7.821569560110358
+    },
+    "2010-09": {
+      "days": 30,
+      "precipitation_mm": 65.17341444534519,
+      "temperature_mean_C": 2.235021748114939
+    },
+    "2010-10": {
+      "days": 31,
+      "precipitation_mm": 16.08382495742437,
+      "temperature_mean_C": -5.718911060428072
+    },
+    "2010-11": {
+      "days": 30,
+      "precipitation_mm": 7.814386289847943,
+      "temperature_mean_C": -12.578944199025797
+    },
+    "2010-12": {
+      "days": 31,
+      "precipitation_mm": 19.123067067242456,
+      "temperature_mean_C": -17.19496324924827
+    },
+    "2011-01": {
+      "days": 31,
+      "precipitation_mm": 33.399384642208844,
+      "temperature_mean_C": -20.940447641087502
+    },
+    "2011-02": {
+      "days": 28,
+      "precipitation_mm": 133.0591346091169,
+      "temperature_mean_C": -16.75413171631434
+    },
+    "2011-03": {
+      "days": 31,
+      "precipitation_mm": 68.81248086134609,
+      "temperature_mean_C": -13.899231955503398
+    },
+    "2011-04": {
+      "days": 30,
+      "precipitation_mm": 52.520523508507914,
+      "temperature_mean_C": -9.836789481932872
+    },
+    "2011-05": {
+      "days": 31,
+      "precipitation_mm": 24.826341235739232,
+      "temperature_mean_C": -2.813591990403249
+    },
+    "2011-06": {
+      "days": 30,
+      "precipitation_mm": 31.858914100557325,
+      "temperature_mean_C": 2.2505347503309996
+    },
+    "2011-07": {
+      "days": 31,
+      "precipitation_mm": 78.08459274041242,
+      "temperature_mean_C": 7.222927982946256
+    },
+    "2011-08": {
+      "days": 31,
+      "precipitation_mm": 78.65258895240336,
+      "temperature_mean_C": 7.730994752315995
+    },
+    "2011-09": {
+      "days": 30,
+      "precipitation_mm": 62.02220885213153,
+      "temperature_mean_C": 3.458489203152573
+    },
+    "2011-10": {
+      "days": 31,
+      "precipitation_mm": 33.88786879145106,
+      "temperature_mean_C": -5.1907873799933535
+    },
+    "2011-11": {
+      "days": 30,
+      "precipitation_mm": 34.05233278021695,
+      "temperature_mean_C": -11.73047366307361
+    },
+    "2011-12": {
+      "days": 31,
+      "precipitation_mm": 25.810671516151036,
+      "temperature_mean_C": -17.400848165932572
+    },
+    "2012-01": {
+      "days": 31,
+      "precipitation_mm": 43.379946264259885,
+      "temperature_mean_C": -21.510005566287912
+    },
+    "2012-02": {
+      "days": 29,
+      "precipitation_mm": 85.19490460890495,
+      "temperature_mean_C": -17.490600186940586
+    },
+    "2012-03": {
+      "days": 31,
+      "precipitation_mm": 101.34977286111454,
+      "temperature_mean_C": -13.728068173048674
+    },
+    "2012-04": {
+      "days": 30,
+      "precipitation_mm": 40.99823342514003,
+      "temperature_mean_C": -8.81936651346414
+    },
+    "2012-05": {
+      "days": 31,
+      "precipitation_mm": 40.88677157628667,
+      "temperature_mean_C": -4.577836712582498
+    },
+    "2012-06": {
+      "days": 30,
+      "precipitation_mm": 30.14765358324658,
+      "temperature_mean_C": 0.26790469567627295
+    },
+    "2012-07": {
+      "days": 31,
+      "precipitation_mm": 41.07776115454374,
+      "temperature_mean_C": 6.731666652080143
+    },
+    "2012-08": {
+      "days": 31,
+      "precipitation_mm": 86.1290907990966,
+      "temperature_mean_C": 8.056891620046168
+    },
+    "2012-09": {
+      "days": 30,
+      "precipitation_mm": 82.02799741897503,
+      "temperature_mean_C": 2.853914903283685
+    },
+    "2012-10": {
+      "days": 31,
+      "precipitation_mm": 28.59655937552487,
+      "temperature_mean_C": -7.402639818141274
+    },
+    "2012-11": {
+      "days": 30,
+      "precipitation_mm": 25.817567245265668,
+      "temperature_mean_C": -13.050361257156185
+    },
+    "2012-12": {
+      "days": 31,
+      "precipitation_mm": 53.572807768226895,
+      "temperature_mean_C": -17.902121059113394
+    },
+    "2013-01": {
+      "days": 31,
+      "precipitation_mm": 38.57643245592444,
+      "temperature_mean_C": -21.875110442914714
+    },
+    "2013-02": {
+      "days": 28,
+      "precipitation_mm": 88.57254753318242,
+      "temperature_mean_C": -17.603328728214688
+    },
+    "2013-03": {
+      "days": 31,
+      "precipitation_mm": 46.387865895549616,
+      "temperature_mean_C": -12.827197180178324
+    },
+    "2013-04": {
+      "days": 30,
+      "precipitation_mm": 50.9948641625563,
+      "temperature_mean_C": -8.494362876491385
+    },
+    "2013-05": {
+      "days": 31,
+      "precipitation_mm": 53.41451288318722,
+      "temperature_mean_C": -3.9545606177964188
+    },
+    "2013-06": {
+      "days": 30,
+      "precipitation_mm": 52.727119694409566,
+      "temperature_mean_C": 2.4264048329369667
+    },
+    "2013-07": {
+      "days": 31,
+      "precipitation_mm": 53.124744160502615,
+      "temperature_mean_C": 7.77957465526295
+    },
+    "2013-08": {
+      "days": 31,
+      "precipitation_mm": 120.81168242398296,
+      "temperature_mean_C": 8.04286480668997
+    },
+    "2013-09": {
+      "days": 30,
+      "precipitation_mm": 34.62251022048986,
+      "temperature_mean_C": 3.353398074712381
+    },
+    "2013-10": {
+      "days": 31,
+      "precipitation_mm": 28.80423050827829,
+      "temperature_mean_C": -3.305421580241942
+    },
+    "2013-11": {
+      "days": 30,
+      "precipitation_mm": 18.731607036844768,
+      "temperature_mean_C": -15.171188475408535
+    },
+    "2013-12": {
+      "days": 31,
+      "precipitation_mm": 30.351010592391113,
+      "temperature_mean_C": -17.49852165122617
+    },
+    "2014-01": {
+      "days": 31,
+      "precipitation_mm": 32.83428258337216,
+      "temperature_mean_C": -19.730934143863898
+    },
+    "2014-02": {
+      "days": 28,
+      "precipitation_mm": 68.0146727764499,
+      "temperature_mean_C": -18.154170972576498
+    },
+    "2014-03": {
+      "days": 31,
+      "precipitation_mm": 108.38733714812787,
+      "temperature_mean_C": -13.369957852188024
+    },
+    "2014-04": {
+      "days": 30,
+      "precipitation_mm": 59.108478276602064,
+      "temperature_mean_C": -9.5393927739942
+    },
+    "2014-05": {
+      "days": 31,
+      "precipitation_mm": 52.71842045643425,
+      "temperature_mean_C": -3.834585536044146
+    },
+    "2014-06": {
+      "days": 30,
+      "precipitation_mm": 30.356220018804407,
+      "temperature_mean_C": 1.3392110424123846
+    },
+    "2014-07": {
+      "days": 31,
+      "precipitation_mm": 72.5375903431006,
+      "temperature_mean_C": 7.125819254590159
+    },
+    "2014-08": {
+      "days": 31,
+      "precipitation_mm": 62.860757244102814,
+      "temperature_mean_C": 6.866814832052573
+    },
+    "2014-09": {
+      "days": 30,
+      "precipitation_mm": 77.84923144003697,
+      "temperature_mean_C": 2.067392873204082
+    },
+    "2014-10": {
+      "days": 31,
+      "precipitation_mm": 37.85025525305371,
+      "temperature_mean_C": -5.854577877395838
+    },
+    "2014-11": {
+      "days": 30,
+      "precipitation_mm": 33.31293073989444,
+      "temperature_mean_C": -14.588018596350107
+    },
+    "2014-12": {
+      "days": 31,
+      "precipitation_mm": 21.994238577040015,
+      "temperature_mean_C": -18.21882743037629
+    },
+    "2015-01": {
+      "days": 31,
+      "precipitation_mm": 41.16989375407377,
+      "temperature_mean_C": -19.40103177295091
+    },
+    "2015-02": {
+      "days": 28,
+      "precipitation_mm": 94.62906619393817,
+      "temperature_mean_C": -16.07108898860857
+    },
+    "2015-03": {
+      "days": 31,
+      "precipitation_mm": 88.34021881971228,
+      "temperature_mean_C": -13.369102962025728
+    },
+    "2015-04": {
+      "days": 30,
+      "precipitation_mm": 71.47198191567178,
+      "temperature_mean_C": -9.047269655322594
+    },
+    "2015-05": {
+      "days": 31,
+      "precipitation_mm": 42.27755229599277,
+      "temperature_mean_C": -4.152324410932062
+    },
+    "2015-06": {
+      "days": 30,
+      "precipitation_mm": 54.41633847476809,
+      "temperature_mean_C": 0.1887687915701107
+    },
+    "2015-07": {
+      "days": 31,
+      "precipitation_mm": 104.20247840703324,
+      "temperature_mean_C": 7.422830271723844
+    },
+    "2015-08": {
+      "days": 31,
+      "precipitation_mm": 77.88779455305077,
+      "temperature_mean_C": 7.28528257954085
+    },
+    "2015-09": {
+      "days": 30,
+      "precipitation_mm": 60.17244675479804,
+      "temperature_mean_C": 1.1729680832912146
+    },
+    "2015-10": {
+      "days": 31,
+      "precipitation_mm": 42.389765824002815,
+      "temperature_mean_C": -6.5048087092656015
+    },
+    "2015-11": {
+      "days": 30,
+      "precipitation_mm": 57.92528664565598,
+      "temperature_mean_C": -12.872597600431709
+    },
+    "2015-12": {
+      "days": 31,
+      "precipitation_mm": 36.98138104324069,
+      "temperature_mean_C": -18.683276310504972
+    },
+    "2016-01": {
+      "days": 31,
+      "precipitation_mm": 39.602305563459375,
+      "temperature_mean_C": -18.56834526631574
+    },
+    "2016-02": {
+      "days": 29,
+      "precipitation_mm": 31.653288496867475,
+      "temperature_mean_C": -16.91180983808434
+    },
+    "2016-03": {
+      "days": 31,
+      "precipitation_mm": 98.90793508198928,
+      "temperature_mean_C": -11.520966767969878
+    },
+    "2016-04": {
+      "days": 30,
+      "precipitation_mm": 84.47510170310879,
+      "temperature_mean_C": -7.294136559648791
+    },
+    "2016-05": {
+      "days": 31,
+      "precipitation_mm": 35.69378912181755,
+      "temperature_mean_C": -1.9435624101278668
+    },
+    "2016-06": {
+      "days": 30,
+      "precipitation_mm": 43.84913489429657,
+      "temperature_mean_C": 4.415520811622878
+    },
+    "2016-07": {
+      "days": 31,
+      "precipitation_mm": 82.56254767835907,
+      "temperature_mean_C": 8.197327919982907
+    },
+    "2016-08": {
+      "days": 31,
+      "precipitation_mm": 90.9878204176907,
+      "temperature_mean_C": 7.6042748122942045
+    },
+    "2016-09": {
+      "days": 30,
+      "precipitation_mm": 28.35926803325288,
+      "temperature_mean_C": 4.433103551682593
+    },
+    "2016-10": {
+      "days": 31,
+      "precipitation_mm": 22.3691602424529,
+      "temperature_mean_C": -3.7223715704034985
+    },
+    "2016-11": {
+      "days": 30,
+      "precipitation_mm": 39.01211287047518,
+      "temperature_mean_C": -10.430153781454514
+    },
+    "2016-12": {
+      "days": 31,
+      "precipitation_mm": 15.684611687372183,
+      "temperature_mean_C": -15.742608903204841
+    },
+    "2017-01": {
+      "days": 31,
+      "precipitation_mm": 107.51328569949922,
+      "temperature_mean_C": -18.095428866368678
+    },
+    "2017-02": {
+      "days": 28,
+      "precipitation_mm": 89.33798385871282,
+      "temperature_mean_C": -16.11521918832715
+    },
+    "2017-03": {
+      "days": 31,
+      "precipitation_mm": 71.28669275191031,
+      "temperature_mean_C": -12.96353648640146
+    },
+    "2017-04": {
+      "days": 30,
+      "precipitation_mm": 92.87900978072041,
+      "temperature_mean_C": -7.723517143704385
+    },
+    "2017-05": {
+      "days": 31,
+      "precipitation_mm": 30.05471151479642,
+      "temperature_mean_C": -2.479000395809381
+    },
+    "2017-06": {
+      "days": 30,
+      "precipitation_mm": 69.80452427338265,
+      "temperature_mean_C": 2.9180737437634985
+    },
+    "2017-07": {
+      "days": 31,
+      "precipitation_mm": 103.5858502200777,
+      "temperature_mean_C": 8.63733749388432
+    },
+    "2017-08": {
+      "days": 31,
+      "precipitation_mm": 78.79100494203361,
+      "temperature_mean_C": 7.954620320118121
+    },
+    "2017-09": {
+      "days": 30,
+      "precipitation_mm": 49.62792079804069,
+      "temperature_mean_C": 3.056897203891851
+    },
+    "2017-10": {
+      "days": 31,
+      "precipitation_mm": 20.674020214391888,
+      "temperature_mean_C": -3.777070257455667
+    },
+    "2017-11": {
+      "days": 30,
+      "precipitation_mm": 16.490952045359286,
+      "temperature_mean_C": -10.942407165300741
+    },
+    "2017-12": {
+      "days": 31,
+      "precipitation_mm": 51.056558606690444,
+      "temperature_mean_C": -16.436384616066835
+    },
+    "2018-01": {
+      "days": 31,
+      "precipitation_mm": 26.22939713589914,
+      "temperature_mean_C": -18.917492558040273
+    },
+    "2018-02": {
+      "days": 28,
+      "precipitation_mm": 43.57293180548138,
+      "temperature_mean_C": -16.26362424135214
+    },
+    "2018-03": {
+      "days": 31,
+      "precipitation_mm": 53.51081347059258,
+      "temperature_mean_C": -12.487765395259594
+    },
+    "2018-04": {
+      "days": 30,
+      "precipitation_mm": 63.07830974770383,
+      "temperature_mean_C": -7.033488337717415
+    },
+    "2018-05": {
+      "days": 31,
+      "precipitation_mm": 56.36632223082132,
+      "temperature_mean_C": -3.7306112433183825
+    },
+    "2018-06": {
+      "days": 30,
+      "precipitation_mm": 51.38725357317294,
+      "temperature_mean_C": 2.9285726955780054
+    },
+    "2018-07": {
+      "days": 31,
+      "precipitation_mm": 101.03106280740641,
+      "temperature_mean_C": 7.659817262570108
+    },
+    "2018-08": {
+      "days": 31,
+      "precipitation_mm": 78.97677874097454,
+      "temperature_mean_C": 8.969958889523324
+    },
+    "2018-09": {
+      "days": 30,
+      "precipitation_mm": 63.69781690346686,
+      "temperature_mean_C": 2.213613787538675
+    },
+    "2018-10": {
+      "days": 31,
+      "precipitation_mm": 36.24002699794551,
+      "temperature_mean_C": -9.971198239725048
+    },
+    "2018-11": {
+      "days": 30,
+      "precipitation_mm": 48.92604738470648,
+      "temperature_mean_C": -14.362300067836932
+    },
+    "2018-12": {
+      "days": 31,
+      "precipitation_mm": 16.42420089495874,
+      "temperature_mean_C": -19.55074727643333
+    },
+    "2019-01": {
+      "days": 31,
+      "precipitation_mm": 75.66978593637937,
+      "temperature_mean_C": -19.408709630174755
+    },
+    "2019-02": {
+      "days": 28,
+      "precipitation_mm": 91.70318789979127,
+      "temperature_mean_C": -17.038951877348232
+    },
+    "2019-03": {
+      "days": 31,
+      "precipitation_mm": 50.704467049818696,
+      "temperature_mean_C": -14.261176101193167
+    },
+    "2019-04": {
+      "days": 30,
+      "precipitation_mm": 58.46993615558645,
+      "temperature_mean_C": -5.831055621202724
+    },
+    "2019-05": {
+      "days": 31,
+      "precipitation_mm": 42.38856680667418,
+      "temperature_mean_C": -4.52569441981556
+    },
+    "2019-06": {
+      "days": 30,
+      "precipitation_mm": 66.96206540692687,
+      "temperature_mean_C": -0.5096027239940495
+    },
+    "2019-07": {
+      "days": 31,
+      "precipitation_mm": 67.36117100144796,
+      "temperature_mean_C": 6.238893958269502
+    },
+    "2019-08": {
+      "days": 31,
+      "precipitation_mm": 96.89563602311483,
+      "temperature_mean_C": 7.272883749052199
+    },
+    "2019-09": {
+      "days": 30,
+      "precipitation_mm": 26.597296712041217,
+      "temperature_mean_C": 5.241363648595382
+    },
+    "2019-10": {
+      "days": 31,
+      "precipitation_mm": 31.801449165804957,
+      "temperature_mean_C": -5.84075892723238
+    },
+    "2019-11": {
+      "days": 30,
+      "precipitation_mm": 92.33225522814973,
+      "temperature_mean_C": -12.89425655008709
+    },
+    "2019-12": {
+      "days": 31,
+      "precipitation_mm": 26.88194730199729,
+      "temperature_mean_C": -20.773841578132256
+    }
+  },
+  "annual_basin": {
+    "2005": {
+      "days": 365,
+      "precipitation_mm": 663.4685537756575,
+      "temperature_mean_C": -7.053507522986956
+    },
+    "2006": {
+      "days": 365,
+      "precipitation_mm": 831.8373607299715,
+      "temperature_mean_C": -6.095173045887997
+    },
+    "2007": {
+      "days": 365,
+      "precipitation_mm": 596.6504807583373,
+      "temperature_mean_C": -5.858645331741793
+    },
+    "2008": {
+      "days": 366,
+      "precipitation_mm": 689.8521576348537,
+      "temperature_mean_C": -6.566552095546367
+    },
+    "2009": {
+      "days": 365,
+      "precipitation_mm": 684.6702219423496,
+      "temperature_mean_C": -7.163439321626554
+    },
+    "2010": {
+      "days": 365,
+      "precipitation_mm": 778.9851567935356,
+      "temperature_mean_C": -6.416109622106794
+    },
+    "2011": {
+      "days": 365,
+      "precipitation_mm": 656.9870425902426,
+      "temperature_mean_C": -6.435296931862689
+    },
+    "2012": {
+      "days": 366,
+      "precipitation_mm": 659.1790660805855,
+      "temperature_mean_C": -7.185683484534313
+    },
+    "2013": {
+      "days": 365,
+      "precipitation_mm": 617.1191275672992,
+      "temperature_mean_C": -6.5267265480549925
+    },
+    "2014": {
+      "days": 365,
+      "precipitation_mm": 657.8244148570192,
+      "temperature_mean_C": -7.0888896499286735
+    },
+    "2015": {
+      "days": 365,
+      "precipitation_mm": 771.8642046819384,
+      "temperature_mean_C": -6.94851992836899
+    },
+    "2016": {
+      "days": 366,
+      "precipitation_mm": 613.157075791142,
+      "temperature_mean_C": -5.090973449170676
+    },
+    "2017": {
+      "days": 365,
+      "precipitation_mm": 781.1025147056156,
+      "temperature_mean_C": -5.435337219629425
+    },
+    "2018": {
+      "days": 365,
+      "precipitation_mm": 639.4409616931298,
+      "temperature_mean_C": -6.662626662499093
+    },
+    "2019": {
+      "days": 365,
+      "precipitation_mm": 727.7677646877329,
+      "temperature_mean_C": -6.8141032366915715
+    }
+  },
+  "output_sha256": {
+    "native_025deg/era5_daily_2005_2019.nc": "51659649395762d4dae98ce2c58529ccf482c0a1f6ccd3030867a72448ed236b",
+    "cwatm_050deg/era5_ps_daily_2005_2019.nc": "a8d48f08ee1d82474978a4d3e402e65747c6a67798c0cfc346117ab59e5fc1a3",
+    "cwatm_050deg/era5_pr_daily_2005_2019.nc": "f8f0d5cc33555f0df3652e8bdf13b910657604e259bb488fc6333807f8987268",
+    "cwatm_050deg/era5_huss_daily_2005_2019.nc": "3cba98afad656c566e0a1b4a9e7ac57fc2d901693d2811a83dfde90a089b2a1a",
+    "cwatm_050deg/era5_sfcwind_daily_2005_2019.nc": "d64610476b3c338d423d3dc7ff56d2442ff932e6ac5f2a3b03859cede32c750c",
+    "cwatm_050deg/era5_tasmax_daily_2005_2019.nc": "af6ad27eedf0022c6714c8190a7f51207e3a89b7f285005080d0900b96e98e2c",
+    "cwatm_050deg/era5_tasmin_daily_2005_2019.nc": "7092d7e8466d37e12cb5d470d67a406a8f1537dad1f9620dca04693685b5ff46",
+    "cwatm_050deg/era5_rsds_daily_2005_2019.nc": "829578a8039c0ac9bb7487c2da72a4cec8f927bd18e055ecaeff3e57c53b7f4b",
+    "cwatm_050deg/era5_tas_daily_2005_2019.nc": "ed4fe2513c3ba937747e0b7ac64583c61f987678f635dd8895efd8cfd5b3212e",
+    "cwatm_050deg/era5_rlds_daily_2005_2019.nc": "1ea4de78badee5d35db21f175e0154e29c90c13c61162a7ade243b8647527f4d"
+  },
+  "method": {
+    "utc_instant": "00-23 UTC",
+    "utc_accum": "01 UTC through following 00 UTC",
+    "precipitation": "m accumulation to kg m-2 s-1",
+    "radiation": "J m-2 accumulation /86400",
+    "wind": "mean hourly vector magnitude at 10m",
+    "humidity": "specific humidity from hourly dew point and pressure then daily mean",
+    "remap": "spherical overlap; daily local extrema averaged spatially; no orographic correction"
+  },
+  "negative_accumulation_qc": {
+    "ssrd": {
+      "count": 4653,
+      "minimum": -1.9015655517578125,
+      "sum_removed": 4927.787863433361,
+      "maximum_daily_cell_correction": 1.9015655517578125,
+      "absolute_tolerance": 10.0,
+      "units": "J m-2"
+    },
+    "strd": {
+      "count": 0,
+      "minimum": 0.0,
+      "sum_removed": 0.0,
+      "maximum_daily_cell_correction": 0.0,
+      "absolute_tolerance": 1.0,
+      "units": "J m-2"
+    },
+    "tp": {
+      "count": 0,
+      "minimum": 0.0,
+      "sum_removed": 0.0,
+      "maximum_daily_cell_correction": 0.0,
+      "absolute_tolerance": 1e-07,
+      "units": "m"
+    }
+  }
+}

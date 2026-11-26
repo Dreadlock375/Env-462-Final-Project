@@ -1,0 +1,22 @@
+name: cwatm_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - scipy
+  - pandas
+  - netcdf4
+  - xarray
+  - rasterio
+  - gdal
+  - eccodes
+  - python-eccodes
+  - zarr
+  - fsspec
+  - aiohttp
+  - pip
+  - pip:
+      - cdsapi==0.7.7
+      - flopy
+      - xmipy

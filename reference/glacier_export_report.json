@@ -1,0 +1,73 @@
+{
+  "status": "ERA5_REGIONAL_GLACIER_FORCING_PROVISIONAL",
+  "production_sha256": "449b704ea2bb1caaf43a7d8528338f8b10476e128c4ab1c7db92ada1d69f77d8",
+  "spatial_source_sha256": {
+    "data/glaciers/processed/besham_rgi62_polygon_cell_overlap_r13_r14.csv": "935ae8a1e41dd9418d2fc0db7b994ade5e70fd84d5200143f7c757e5c42c8369",
+    "data/basins/upper_indus/provisional_besham_30min_cells.csv": "7d471ab093beb4d16353ea59d746b02af640d1a5fe35568f3145326edc4652d2",
+    "data/glaciers/processed/besham_cwatm_cell_to_outlet.csv": "28952b152e3c5a071386ecef0a0af728c89f3f9dd7663449e77fc538572f406a",
+    "data/glaciers/processed/step13_besham_batch_worklist.csv": "8a20ad887ae02de845df7c5dcc47736541420907091ef73baa2573a247dda01e"
+  },
+  "glaciers": 13945,
+  "omitted_glaciers": [
+    {
+      "rgi_id": "RGI60-14.02087",
+      "status": "BLOCKED",
+      "error_class": "RuntimeError",
+      "error": "Incomplete ERA5 glacier directory"
+    },
+    {
+      "rgi_id": "RGI60-14.06796",
+      "status": "BLOCKED",
+      "error_class": "RuntimeError",
+      "error": "Incomplete ERA5 glacier directory"
+    },
+    {
+      "rgi_id": "RGI60-14.06855",
+      "status": "BLOCKED",
+      "error_class": "RuntimeError",
+      "error": "Incomplete ERA5 glacier directory"
+    },
+    {
+      "rgi_id": "RGI60-14.07757",
+      "status": "BLOCKED",
+      "error_class": "RuntimeError",
+      "error": "Incomplete ERA5 glacier directory"
+    },
+    {
+      "rgi_id": "RGI60-14.13504",
+      "status": "BLOCKED",
+      "error_class": "RuntimeError",
+      "error": "Incomplete ERA5 glacier directory"
+    },
+    {
+      "rgi_id": "RGI60-14.16499",
+      "status": "BLOCKED",
+      "error_class": "RuntimeError",
+      "error": "Incomplete ERA5 glacier directory"
+    },
+    {
+      "rgi_id": "RGI60-14.16830",
+      "status": "BLOCKED",
+      "error_class": "ConnectionError",
+      "error": "HTTPSConnectionPool(host='cluster.klima.uni-bremen.de', port=443): Max retries exceeded with url: /~oggm/gdirs/oggm_v1.6/L3-L5_files/2025.6/elev_bands/ERA5/per_glacier_spinup/RGI62/b_080/L3/ (Caused by NewConnectionError(\"HTTPSConnection(host='cluster.klima.uni-bremen.de', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+    }
+  ],
+  "missing_overlap_km2": 2.3224080000000002,
+  "coverage_percent": 99.98713795780613,
+  "represented_polygon_overlap_km2": 18053.970410179,
+  "source_m3": {
+    "melt": 460136370438.78906,
+    "rain": 82777870495.8973
+  },
+  "exported_m3": {
+    "melt": 406078943017.84607,
+    "rain": 74461226921.65092
+  },
+  "output_sha256": {
+    "melt_on_glacier_2005_2019.nc": "d7a59fb370bca9acdd8079f7f0edc0c882d7f65d29b9cbdec79159008284d6f5",
+    "liq_prcp_on_glacier_2005_2019.nc": "fca86b39a30539116cb61a41b5d01d22d1f668fa7dc055a98be0559b2bd53686",
+    "glacier_cover_fraction_2005_2019.nc": "845872f8f4e60bb14ba1cce305d0e73e03a43e5c9c7ac69fe46daa455d65113c"
+  },
+  "manifest_sha256": "3f1881ac656ea155755770603616b523c5eb9eef3a58281a1a98e5f7248ee1cf",
+  "routing": "Largest in-mask polygon overlap, not verified terminus; capped area scaling; static cover for included glaciers only"
+}

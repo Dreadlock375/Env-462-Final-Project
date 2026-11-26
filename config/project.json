@@ -1,0 +1,50 @@
+{
+  "start": "2005-01-01",
+  "end": "2019-12-31",
+  "spinup_end": "2005-12-31",
+  "calibration_end": "2012-12-31",
+  "outlet_row_col": [
+    110,
+    505
+  ],
+  "outlet_lon_lat": [
+    72.75,
+    34.75
+  ],
+  "expected_basin_cells": 67,
+  "expected_glaciers": 13952,
+  "rgi_regions": [
+    "13",
+    "14",
+    "15"
+  ],
+  "oggm_version": "1.6.3",
+  "cwatm_revision": "5baaadd8c4379f4e82956b31c1d4b90d3ebf7e00",
+  "era5_archive": "https://cluster.klima.uni-bremen.de/~oggm/gdirs/oggm_v1.6/L3-L5_files/2025.6/elev_bands/ERA5/per_glacier_spinup/",
+  "reference_omissions": [
+    "RGI60-14.02087",
+    "RGI60-14.06796",
+    "RGI60-14.06855",
+    "RGI60-14.07757",
+    "RGI60-14.13504",
+    "RGI60-14.16499",
+    "RGI60-14.16830"
+  ],
+  "max_missing_overlap_km2": 2.851,
+  "max_missing_glaciers": 7,
+  "frozen_parameters": {
+    "precipitation_coversion": "60.48",
+    "IceMeltCoef": "0.0035",
+    "manningsN": "2.0"
+  },
+  "observation_station": {
+    "station_id": "Indus_at_Besham_Qila",
+    "code": "34729801",
+    "latitude": 34.92417,
+    "longitude": 72.88194,
+    "catchment_km2": 162393.0,
+    "elevation_masl": 580.0
+  },
+  "observation_source_sha256": "add2b1da400e54777b8943858b2d71e8de85ce87e67d717ea78ced64ac12fef5",
+  "observation_metadata_source_sha256": "972168ccb12809c00db31f69ce7f8acd693b7066a893c7029cb40e2cb4df4b9b"
+}

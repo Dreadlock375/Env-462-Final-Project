@@ -1,0 +1,23 @@
+{
+  "status": "ERA5_COUPLED_FLUX_AUDIT_COMPLETE",
+  "checks": {
+    "exit_code": 0,
+    "trace_days": 5478,
+    "basin_area_km2": 171171.03462400002,
+    "glacier_fraction_area_weighted": 0.1054732799504833,
+    "discharge_max_abs_difference_m3s": 0.0,
+    "melt_on_glacier": {
+      "source_m3": 406078942938.9396,
+      "runtime_m3": 406078942938.9396,
+      "max_daily_abs_diff_m3": 2.384185791015625e-07
+    },
+    "liq_prcp_on_glacier": {
+      "source_m3": 74461226942.23209,
+      "runtime_m3": 74461226942.23206,
+      "max_daily_abs_diff_m3": 2.384185791015625e-07
+    },
+    "runoff_assembly_max_abs_residual_mm_day": 3.83026943495679e-15
+  },
+  "errors": [],
+  "note": "Diagnostic quantities, not a closed mass balance. Glacier melt includes seasonal snow/firn and ice; do not add full-basin precipitation to glacier liquid fluxes."
+}

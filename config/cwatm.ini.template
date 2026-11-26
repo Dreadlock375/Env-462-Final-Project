@@ -1,0 +1,362 @@
+# Besham Qila historical ERA5 configuration (CWatM).
+# Active assignments preserved from the reviewed uncalibrated run.
+# @ROOT@ and @OUTPUT@ are replaced by the workflow.
+# Parameter changes are applied centrally by hydrology.py.
+# Inactive process settings are retained for model compatibility.
+
+
+[OPTIONS]
+TemperatureInKelvin = True
+gridSizeUserDefined = True
+calc_evaporation = True
+includeIrrigation = False
+includeWaterDemand = False
+usingAllocSegments = False
+limitAbstraction = True
+fossil_water_treated_normally = True
+sectorSourceAbstractionFractions = True
+calc_environflow = False
+preferentialFlow = False
+CapillarRise = True
+includeRunoffConcentration = True
+includeWaterBodies = False
+includeRouting = True
+inflow = False
+writeNetcdfStack = True
+reportMap = False
+reportTss = True
+calcWaterBalance = False
+sumWaterBalance = False
+PCRaster = False
+includeGlaciers = True
+usepySnowClim = False
+savebasinmap = True
+
+[FILE_PATHS]
+PathRoot = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min
+PathOut = @OUTPUT@
+PathMaps = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min
+PathMeteo = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg
+PathWaterdemand = $(PathMaps)/landsurface/waterDemand
+
+[NETCDF_ATTRIBUTES]
+institution = IIASA
+title = Besham ERA5 meteorology and ERA5-derived glacier forcing; provisional historical diagnostic
+metaNetcdfFile = @ROOT@/cwatm/source/cwatm/metaNetcdf.xml
+
+[MASK_OUTLET]
+MaskMap = 72.75 34.75
+Gauges = 72.75 34.75
+GaugesLocal = True
+
+[TIME-RELATED_CONSTANTS]
+StepStart = 01/01/2005
+SpinUp = 01/01/2006
+StepEnd = 31/12/2019
+
+[INITITIAL CONDITIONS]
+load_initial = False
+initLoad = $(FILE_PATHS:PathOut)/besham_initial_unused.nc
+save_initial = False
+initSave = $(FILE_PATHS:PathOut)/besham_initial
+StepInit = 31/12/2005
+
+[CALIBRATION]
+SnowMeltCoef = 0.004
+crop_correct = 1.0
+soildepth_factor = 1.0
+preferentialFlowConstant = 4.0
+arnoBeta_add = 0.1
+factor_interflow = 1.0
+recessionCoeff_factor = 1.0
+runoffConc_factor = 1.0
+manningsN = 1.0
+normalStorageLimit = 0.5
+lakeAFactor = 1.0
+lakeEvaFactor = 1.0
+
+[TOPOP]
+Ldd = $(FILE_PATHS:PathMaps)/routing/ldd.map
+ElevationStD = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landsurface/topo/elvstd.nc
+CellArea = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/routing/cellarea.nc
+
+[METEO]
+PrecipitationMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_pr_daily_2005_2019.nc
+TavgMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_tas_daily_2005_2019.nc
+E0Maps = $(FILE_PATHS:PathMeteo)/EWRef_rhine.nc
+ETMaps = $(FILE_PATHS:PathMeteo)/ETRef_rhine.nc
+precipitation_coversion = 86.4
+evaporation_coversion = 1.00
+meteomapssamescale = True
+usemeteodownscaling = False
+TminMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_tasmin_daily_2005_2019.nc
+TmaxMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_tasmax_daily_2005_2019.nc
+PSurfMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_ps_daily_2005_2019.nc
+QAirMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_huss_daily_2005_2019.nc
+WindMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_sfcwind_daily_2005_2019.nc
+RSDSMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_rsds_daily_2005_2019.nc
+RSDLMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_rlds_daily_2005_2019.nc
+
+[EVAPORATION]
+albedo = False
+albedoMaps = $(FILE_PATHS:PathMaps)/landsurface/albedo/albedo.nc
+AlbedoSoil = 0.15
+AlbedoWater = 0.05
+AlbedoCanopy = 0.23
+useHuss = True
+TminMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_tasmin_daily_2005_2019.nc
+TmaxMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_tasmax_daily_2005_2019.nc
+PSurfMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_ps_daily_2005_2019.nc
+RhsMaps = $(FILE_PATHS:PathMeteo)/unused_relative_humidity.nc
+QAirMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_huss_daily_2005_2019.nc
+WindMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_sfcwind_daily_2005_2019.nc
+RSDSMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_rsds_daily_2005_2019.nc
+RSDLMaps = @ROOT@/data/climate/era5/processed/daily_2005_2019/cwatm_050deg/era5_rlds_daily_2005_2019.nc
+
+[SNOW]
+NumberSnowLayers = 7
+GlacierTransportZone = 3
+TemperatureLapseRate = 0.0065
+SnowFactor = 1.0
+SnowSeasonAdj = 0.001
+TempMelt =1.0
+TempSnow = 1.0
+IceMeltCoef  = 0.007
+
+[FROST]
+SnowWaterEquivalent = 0.45
+Afrost = 0.97
+Kfrost = 0.57
+FrostIndexThreshold = 56
+
+[VEGETATION]
+cropgroupnumber = $(FILE_PATHS:PathMaps)/soil/cropgrp.nc
+
+[SOIL]
+PathTopo = $(FILE_PATHS:PathMaps)/landsurface/topo
+PathSoil = $(FILE_PATHS:PathMaps)/soil
+tanslope = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landsurface/topo/tanslope.nc
+slopeLength = $(PathTopo)/slopeLength.map
+relativeElevation = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/landsurface/topo/dzRel_hydro1k.nc
+KSat1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/ksat1_30min.nc
+KSat2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/ksat2_30min.nc
+KSat3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/ksat3_30min.nc
+alpha1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/alpha1_30min.nc
+alpha2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/alpha2_30min.nc
+alpha3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/alpha3_30min.nc
+lambda1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/lambda1_30min.nc
+lambda2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/lambda2_30min.nc
+lambda3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/lambda3_30min.nc
+thetas1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/thetas1_30min.nc
+thetas2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/thetas2_30min.nc
+thetas3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/thetas3_30min.nc
+thetar1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/thetar1_30min.nc
+thetar2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/thetar2_30min.nc
+thetar3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/thetar3_30min.nc
+percolationImp = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/percolationImp.nc
+maxGWCapRise    = 5.0
+minCropKC        = 0.2
+minTopWaterLayer = 0.0
+StorDepth1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/storageDepth1.nc
+StorDepth2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/storageDepth2.nc
+
+[LANDCOVER]
+PathLandcover = $(FILE_PATHS:PathMaps)/landsurface
+coverTypes = forest, grassland, irrPaddy, irrNonPaddy, sealed, water
+coverTypesShort = f, g, i, n, s, w
+fractionLandcover = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landsurface/fractionLandcover_1850_2018.nc
+dynamicLandcover = False
+fixLandcoverYear = 2018
+
+[__forest]
+PathForest = $(FILE_PATHS:PathMaps)/landcover/forest
+PathSoil =  $(FILE_PATHS:PathMaps)/soil
+forest_arnoBeta = 0.2
+forest_KSat1 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_ksat1.nc
+forest_KSat2 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_ksat2.nc
+forest_KSat3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/ksat3_30min.nc
+forest_alpha1 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_alpha1.nc
+forest_alpha2 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_alpha2.nc
+forest_alpha3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/alpha3_30min.nc
+forest_lambda1 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_lambda1.nc
+forest_lambda2 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_lambda2.nc
+forest_lambda3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/lambda3_30min.nc
+forest_thetas1 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_thetas1.nc
+forest_thetas2 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_thetas2.nc
+forest_thetas3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/thetas3_30min.nc
+forest_thetar1 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_thetar1.nc
+forest_thetar2 = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/soil/forest_thetar2.nc
+forest_thetar3 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/soil/thetar3_30min.nc
+forest_minInterceptCap  = 0.001
+forest_cropDeplFactor   = 0.0
+forest_fracVegCover  = $(PathForest)/fracVegCover.map
+forest_rootFraction1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/forest/rootFraction1.nc
+forest_rootFraction2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/forest/rootFraction2.nc
+forest_maxRootDepth  = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/forest/maxRootDepth.nc
+forest_minSoilDepthFrac = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/forest/minSoilDepthFrac.nc
+forest_cropCoefficientNC = $(PathForest)/cropCoefficientForest_10days.nc
+forest_interceptCapNC    = $(PathForest)/interceptCapForest_10days.nc
+
+[__grassland]
+PathGrassland = $(FILE_PATHS:PathMaps)/landcover/grassland
+grassland_arnoBeta = 0.0
+grassland_minInterceptCap  = 0.001
+grassland_cropDeplFactor   = 0.0
+grassland_fracVegCover  = $(PathGrassland)/fracVegCover.map
+grassland_rootFraction1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/grassland/rootFraction1.nc
+grassland_rootFraction2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/grassland/rootFraction2.nc
+grassland_maxRootDepth  = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/grassland/maxRootDepth.nc
+grassland_minSoilDepthFrac = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/grassland/minSoilDepthFrac.nc
+grassland_cropCoefficientNC = $(PathGrassland)/cropCoefficientGrassland_10days.nc
+grassland_interceptCapNC    = $(PathGrassland)/interceptCapGrassland_10days.nc
+
+[__irrPaddy]
+PathIrrPaddy = $(FILE_PATHS:PathMaps)/landcover/irrPaddy
+irrPaddy_arnoBeta = 0.2
+irrPaddy_minInterceptCap  = 0.001
+irrPaddy_cropDeplFactor   = 0.0
+irrPaddy_fracVegCover  = $(PathIrrPaddy)/fracVegCover.map
+irrPaddy_rootFraction1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/irrPaddy/rootFraction1.nc
+irrPaddy_rootFraction2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/irrPaddy/rootFraction2.nc
+irrPaddy_maxRootDepth  = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/irrPaddy/maxRootDepth.nc
+irrPaddy_minSoilDepthFrac = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/irrPaddy/minSoilDepthFrac.nc
+irrPaddy_cropCoefficientNC = $(PathIrrPaddy)/cropCoefficientirrPaddy_10days.nc
+irrPaddy_maxtopwater = 0.05
+
+[__irrNonPaddy]
+PathIrrNonPaddy = $(FILE_PATHS:PathMaps)/landcover/irrNonPaddy
+irrNonPaddy_arnoBeta = 0.2
+irrNonPaddy_minInterceptCap  = 0.001
+irrNonPaddy_cropDeplFactor   = 0.0
+irrNonPaddy_fracVegCover  = $(PathIrrNonPaddy)/fracVegCover.map
+irrNonPaddy_rootFraction1 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/irrNonPaddy/rootFraction1.nc
+irrNonPaddy_rootFraction2 = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/irrNonPaddy/rootFraction2.nc
+irrNonPaddy_maxRootDepth  = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/irrNonPaddy/maxRootDepth.nc
+irrNonPaddy_minSoilDepthFrac = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/landcover/irrNonPaddy/minSoilDepthFrac.nc
+irrNonPaddy_cropCoefficientNC = $(PathIrrNonPaddy)/cropCoefficientirrNonPaddy_10days.nc
+
+[__sealed]
+PathSealed = $(FILE_PATHS:PathMaps)/landcover/sealed
+sealed_minInterceptCap  = 0.001
+
+[__open_water]
+PathWater = $(FILE_PATHS:PathMaps)/landcover/water
+water_minInterceptCap  = 0.0
+
+[GROUNDWATER]
+PathGroundwater = $(FILE_PATHS:PathMaps)/groundwater
+recessionCoeff = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/groundwater/recessionCoeff.nc
+specificYield = @ROOT@/data/cwatm/spatial/30min/official_CWatM_Earth_30min/groundwater/specificYield.nc
+kSatAquifer = @ROOT@/data/cwatm/spatial/30min/cwatm_input_30min/groundwater/kSatAquifer.nc
+
+[WATERDEMAND]
+allocSegments = $(FILE_PATHS:PathWaterdemand)/catchx.nc
+demand_unit = False
+historicalIrrigationArea = $(FILE_PATHS:PathWaterdemand)/irrigationArea.nc
+domesticWaterDemandFile = $(FILE_PATHS:PathWaterdemand)/dom_isimip_year_millionm3_1850_2018.nc
+domesticTimeMonthly = False
+domesticWithdrawalvarname = domww
+domesticConsuptionvarname = domwc
+industryWaterDemandFile = $(FILE_PATHS:PathWaterdemand)/ind_isimip_year_millionm3_1850_2018.nc
+industryTimeMonthly = False
+industryWithdrawalvarname = indww
+industryConsuptionvarname = indwc
+uselivestock = True
+livestockWaterDemandFile = $(FILE_PATHS:PathWaterdemand)/liv_isimip_year_millionm3_1850_2018.nc
+livestockTimeMonthly = False
+livestockvarname = livestockConsumption
+irrNonPaddy_efficiency = $(FILE_PATHS:PathMaps)/landsurface/waterDemand/efficiency.nc
+irrPaddy_efficiency = $(FILE_PATHS:PathMaps)/landsurface/waterDemand/efficiency.nc
+use_environflow = False
+EnvironmentalFlowFile = $(FILE_PATHS:PathOut)/MQ90_12month.nc
+irrigation_returnfraction = 0.5
+swAbstractionFraction_Channel_Domestic = 1
+swAbstractionFraction_Channel_Livestock = 1
+swAbstractionFraction_Channel_Industry = 1
+swAbstractionFraction_Channel_Irrigation = 1
+swAbstractionFraction_Lift_Domestic = 0
+swAbstractionFraction_Lift_Livestock = 0
+swAbstractionFraction_Lift_Industry = 0
+swAbstractionFraction_Lift_Irrigation = 0
+swAbstractionFraction_Lake_Domestic = 1
+swAbstractionFraction_Lake_Livestock = 1
+swAbstractionFraction_Lake_Industry = 1
+swAbstractionFraction_Lake_Irrigation = 1
+swAbstractionFraction_Res_Domestic = 1
+swAbstractionFraction_Res_Livestock = 1
+swAbstractionFraction_Res_Industry = 1
+swAbstractionFraction_Res_Irrigation = 1
+gwAbstractionFraction_Domestic = 1
+gwAbstractionFraction_Livestock = 1
+gwAbstractionFraction_Industry = 1
+gwAbstractionFraction_Irrigation = 1
+swAbstractionFrac = 0.9
+averageDischarge = $(FILE_PATHS:PathOut)/discharge_totalavg_rhine30min.nc
+averageBaseflow  = $(FILE_PATHS:PathOut)/baseflow_totalavg_rhine30min.nc
+baseflowInM = True
+
+[RUNOFF_CONCENTRATION]
+forest_runoff_peaktime = 1.0
+grassland_runoff_peaktime = 0.5
+irrPaddy_runoff_peaktime = 0.5
+irrNonPaddy_runoff_peaktime = 0.5
+sealed_runoff_peaktime = 0.15
+water_runoff_peaktime = 0.01
+glaciers_runoff_peaktime = 0.5
+interflow_runoff_peaktime =1.0
+baseflow_runoff_peaktime = 2.0
+
+[ROUTING]
+PathRouting = $(FILE_PATHS:PathMaps)/routing
+NoRoutingSteps = 10
+chanBeta = 0.6
+chanGrad = $(PathRouting)/kinematic/changrad.nc
+chanGradMin = 0.0001
+chanMan = $(PathRouting)/kinematic/chanman.nc
+chanLength = $(PathRouting)/kinematic/chanleng.nc
+chanWidth = $(PathRouting)/kinematic/chanbw.nc
+chanDepth = $(PathRouting)/kinematic/chanbnkf.nc
+
+[LAKES_RESERVOIRS]
+PathLakesRes = $(FILE_PATHS:PathMaps)/routing/lakesreservoirs
+useResAndLakes = True
+dynamicLakesRes = True
+fixLakesResYear = 1950
+waterBodyID = $(PathLakesRes)/lakesResID.nc
+waterBodyTyp = $(PathLakesRes)/lakesResType.nc
+waterBodyDis = $(PathLakesRes)/lakesResDis.nc
+waterBodyArea = $(PathLakesRes)/lakesResArea.nc
+buffer_waterbodies = 2
+useSmallLakes = False
+smallLakesRes = $(PathLakesRes)/smallLakesRes.nc
+smallwaterBodyDis = $(PathLakesRes)/smalllakesresDis.nc
+waterBodyVolRes = $(PathLakesRes)/lakesResVolRes.nc
+waterBodyYear = $(PathLakesRes)/lakesResYear.nc
+conservativeStorageLimit = 0.1
+floodStorageLimit = 0.9
+adjust_Normal_Flood = 0.5
+MinOutflowQ = 0.2
+NormalOutflowQ = 1.0
+NonDamagingOutflowQ = 4.0
+
+[INFLOW]
+In_Dir = $(FILE_PATHS:PathRoot)/in
+InflowPoints = $(In_Dir)/in.map
+QInTS = mm.tss
+
+[ENVIRONMENTALFLOW]
+calc_ef_after = True
+EFDis = $(FILE_PATHS:PathOut)/discharge_rhine.nc
+cut_ef_map = False
+OUT_Dir = $(FILE_PATHS:PathOut)
+
+[OUTPUT]
+OUT_Dir = $(FILE_PATHS:PathOut)
+OUT_TSS_Daily = discharge
+
+[GLACIER]
+MeltGlacierMaps = @ROOT@/data/processed/glacier_forcing/melt_on_glacier_2005_2019.nc
+PrecGlacierMaps = @ROOT@/data/processed/glacier_forcing/liq_prcp_on_glacier_2005_2019.nc
+fractionGlaciercover = @ROOT@/data/processed/glacier_forcing/glacier_cover_fraction_2005_2019.nc
+includeOnlyGlaciersMelt = False
+excludeGlacierArea = True

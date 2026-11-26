@@ -1,0 +1,8 @@
+isimip-client==2.0.2
+markdown-it-py==4.3.0
+mdurl==0.1.2
+oggm==1.6.3
+progressbar2==4.7.0
+pytest-mpl-oggm==0.180.2
+python-utils==4.2.0
+rich==15.0.0

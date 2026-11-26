@@ -1,0 +1,59 @@
+{
+  "status": "FROZEN_PARAMETER_EVALUATION_COMPLETE",
+  "periods": {
+    "calibration_2006_2012": {
+      "uncalibrated": {
+        "days": 2557,
+        "nse": 0.40829701626563175,
+        "kge": 0.37674511238474107,
+        "bias_pct": 37.007381078589695,
+        "annual_peak_abs_relative_error_pct": 80.7244553809278,
+        "annual_peak_mean_abs_timing_error_days": 19.0
+      },
+      "calibrated": {
+        "days": 2557,
+        "nse": 0.8282197329081039,
+        "kge": 0.8809775118187516,
+        "bias_pct": -1.11097545349087,
+        "annual_peak_abs_relative_error_pct": 19.77496987001379,
+        "annual_peak_mean_abs_timing_error_days": 9.0
+      }
+    },
+    "validation_2013_2019": {
+      "uncalibrated": {
+        "days": 2556,
+        "nse": 0.4176062471010815,
+        "kge": 0.4064142532419145,
+        "bias_pct": 36.33128855318108,
+        "annual_peak_abs_relative_error_pct": 72.94673471097539,
+        "annual_peak_mean_abs_timing_error_days": 22.571428571428573
+      },
+      "calibrated": {
+        "days": 2556,
+        "nse": 0.818682003150178,
+        "kge": 0.892321368664472,
+        "bias_pct": -0.7234423534164813,
+        "annual_peak_abs_relative_error_pct": 10.4896916893012,
+        "annual_peak_mean_abs_timing_error_days": 14.857142857142858
+      }
+    },
+    "full_2006_2019": {
+      "uncalibrated": {
+        "days": 5113,
+        "nse": 0.4130657252801042,
+        "kge": 0.3919246973549647,
+        "bias_pct": 36.66852085790124,
+        "annual_peak_abs_relative_error_pct": 76.83559504595158,
+        "annual_peak_mean_abs_timing_error_days": 20.785714285714285
+      },
+      "calibrated": {
+        "days": 5113,
+        "nse": 0.8233384712358196,
+        "kge": 0.8872667599262372,
+        "bias_pct": -0.9167423465120561,
+        "annual_peak_abs_relative_error_pct": 15.132330779657496,
+        "annual_peak_mean_abs_timing_error_days": 11.928571428571429
+      }
+    }
+  }
+}
