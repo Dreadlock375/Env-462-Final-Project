@@ -39,8 +39,7 @@ See `docs/INSTALLATION.md` for details and `docs/METHODOLOGY.md` for scientific 
 
 This source distribution does not include WAPDA observations or the raw climate,
 static-map or glacier archives. Obtain the original WAPDA station CSV and
-metadata independently from the data provider or project owner, subject to the
-provider's permission. This historical reference configuration requires their
+metadata. This historical reference configuration requires their
 exact recorded checksums; other datasets are not automatically interchangeable.
 The reference daily CSV contains simulated discharge only. A SHA-256 fingerprint
 of the original observation sequence preserves the exact observation regression
@@ -49,13 +48,10 @@ observation-dependent tests skip if the original WAPDA data are absent; supply
 the observations to run them. Neither a successful test suite with skips nor a
 source-only checkout establishes a complete cold rebuild.
 
-The reference rebuild with migrated raw inputs and fresh environments reproduced
-all 5,113 historical daily simulated discharge values exactly. The automated
-cold acquisition workflow has not yet been fully exercised from observations
-alone. The model remains a historical research workflow with provisional basin
+he model remains a historical research workflow with provisional basin
 and glacier routing, fixed glacier geometry, and imperfect flood timing and
-frequency. Future climate scenarios are not yet implemented.
+frequency.
 
 Third-party software and datasets retain their respective licensing and access
-conditions; downloading this repository does not grant redistribution rights to
+conditions. Downloading this repository does not grant redistribution rights to
 the original WAPDA records or upstream inputs.
